@@ -14,4 +14,4 @@ def detect_hands(frame):
 def draw_hands(frame,result):
     if result.multi_hand_landmarks:
         for hand_landmarks in result.multi_hand_landmarks:
-            mp_drawing.drawing_landmarks(frame ,hand_landmarks, mp_hands.HAND_CONNECTIONS)
+            mp_drawing.draw_landmarks(frame ,hand_landmarks, mp_hands.HAND_CONNECTIONS)

@@ -22,3 +22,11 @@ def main():
                 draw_hands(frame,result)
         
         show_frame(frame)
+        if wait_key() == ord('q'):
+            break
+    cap.realease()
+    cv2.destroyAllWindows()
+
+
+if __name__ == "__main__":
+    main()
