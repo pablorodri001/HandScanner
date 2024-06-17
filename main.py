@@ -24,7 +24,7 @@ def main():
         show_frame(frame)
         if wait_key() == ord('q'):
             break
-    cap.realease()
+    cap.release()
     cv2.destroyAllWindows()
 
 
